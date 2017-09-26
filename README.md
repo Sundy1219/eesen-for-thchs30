@@ -1,12 +1,12 @@
 这个recipe是根据eesen代码，加入清华语料库，改写的。
 ===
-# 1 功能:
+## 1 功能:
 > 1)可以实现wav音频数据到汉字序列的映射，也就是将语音识别成汉字  
 
 > 2)可以加入其它的汉语语料库进行算法研究
 	
 
-2 算法:BiLSTM+CTC+WFST  
+## 2 算法:BiLSTM+CTC+WFST  
 
 	1)BiLSTM:3 layers+ 1 projection layer,320 hidden units  
 
@@ -14,18 +14,18 @@
 
 	3)WFST: CTC token fst, lexicon fst, language model fst 
 
-3 实验结果:
-	CTC训练标签正确率:92%左右  
+## 3 实验结果:
+	1)CTC训练标签正确率:92%左右  
 
-	CTC交叉严重标签正确率:90%左右  
+	2)CTC交叉严重标签正确率:90%左右  
 
-	最终的解码WER:25%左右  
+	3)最终的解码WER:25%左右  
 
 
 
-4 该目录下的相关文件说明:  
+## 4 该目录下的相关文件说明:  
 
-	1)运行该项目:  
+	 1)运行该项目:  
 
 		./run.sh  
 
