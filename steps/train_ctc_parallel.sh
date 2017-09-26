@@ -137,8 +137,8 @@ for iter in $(seq $start_epoch_num $max_iters); do
     $train_tool --report-step=$report_step --num-sequence=$num_sequence --frame-limit=$frame_num_limit \
         --learn-rate=$learn_rate --momentum=$momentum \
         --verbose=$verbose \
-        "$feats_tr" "$labels_tr" $dir/nnet/nnet.iter$[iter-1] $dir/nnet/nnet.iter${iter} #\
-       # >& $dir/log/tr.iter$iter.log || exit 1;
+        "$feats_tr" "$labels_tr" $dir/nnet/nnet.iter$[iter-1] $dir/nnet/nnet.iter${iter} \
+        >& $dir/log/tr.iter$iter.log || exit 1;
 
     end_time=`date | awk '{print $6 "-" $2 "-" $3 " " $4}'`
     echo -n "ENDS [$end_time]: "
