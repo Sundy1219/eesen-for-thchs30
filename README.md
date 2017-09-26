@@ -25,21 +25,15 @@
 
 ## 4 该目录下的相关文件说明:  
 
-	 1)运行该项目:  
-
-		./run.sh  
-
+	 1)运行该项目: ./run.sh 
 			
 		也可以单独运行每个高亮的shell脚本，其中  
 
 		make_TLG_WFST.sh: 用来生成TLG.fst . 无需加参数运行,生成的文件所在的目录为:data/{train,test,dev,lang,search_Graph}.  
 
-
 		feature.sh:用来生成wav音频数据的fbank特征，40+delta+double delta. 无需加参数运行,生成的文件所在目录为:data/{train,test,dev} ,fbank  
 
-
 		train.sh: 训练声学模型 无需加参数运行，也可以修改该脚本里的网络参数。生成的文件所在目录为:exp/model_l$_c$  
-
 
 		decode.sh:利用 声学模型 和集成了语言模型的WFST进行解码. 生成的文件所在目录为:exp/model_l$_c$/decode_test 
 
