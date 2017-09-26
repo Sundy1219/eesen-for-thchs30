@@ -12,7 +12,7 @@
 
 	2)CTC:216个声韵母标签+1个blank标签  
 
-	3)WFST: CTC token fst, lexicon fst, language model fst 
+	3)WFST: CTC token fst(T.fst), lexicon fst(L.fst), language model fst(G.fst) 
 
 ## 3 实验结果:
 	1)CTC训练标签正确率:92%左右  
