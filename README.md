@@ -50,5 +50,5 @@
 
 		准备验证数据，放入corpus/dev目录下，wav+text  
 
-## 5 安装eesen
-	1)根据[eesen](https://github.com/srvk/eesen)中的INSTALL安装
+## 5 安装eesen:
+	1)根据https://github.com/srvk/eesen中的INSTALL安装
